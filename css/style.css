@@ -1,0 +1,170 @@
+/*COMMON*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Avenir Next Regular;
+  font-style: 15px;
+  box-sizing: border-box;
+}
+header,
+section,
+main,
+aside,
+div,
+nav,
+ul,
+li,
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+/*MODULES AND VARIABLES*/
+/*FONTS*/
+/*COLORS*/
+/*WIDTH AND OVER*/
+@font-face {
+  font-family: Avenir Next Regular;
+  src: url(../fonts/AvenirNextCyr-Regular.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Avenir Next Medium;
+  src: url(../fonts/AvenirNextCyr-Medium.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Avenir Next Bold;
+  src: url(../fonts/AvenirNextCyr-Bold.ttf);
+  font-weight: 900;
+}
+.dfl {
+  display: flex;
+}
+.dbl {
+  display: block;
+}
+.jcc {
+  justify-content: center;
+}
+.jcb {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.4rem 0 0.4rem 0;
+  cursor: url(../images/cursor.png), pointer;
+  transition: all 0.3s linear;
+}
+.btn--select {
+  width: 95px;
+  border-radius: 20px;
+  background: #1168B6;
+}
+.btn--select:hover {
+  background: #158CF5;
+}
+.btn--info {
+  background: #FB513D;
+  width: 110px;
+}
+.btn--more {
+  background: #FB513D;
+  width: 160px;
+  border-radius: 6px;
+}
+.btn--more:hover {
+  box-shadow: 0px 4px 20px rgba(251, 81, 61, 0.8);
+}
+.text-input {
+  width: 230px;
+  padding: 14px 18px 14px 0;
+  background-color: white;
+  font-size: 1.1rem;
+  transition: border 0.3s libear;
+}
+.text-input:hover {
+  border: 2px solid #FF1F1F;
+  color: rgba(51, 51, 51, 0.6);
+}
+.icon {
+  display: block;
+  background: url(../images/icons.png) no-repeat;
+}
+.top__header {
+  width: 100%;
+  background: #1168B6;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Avenir Next Medium;
+  font-size: 12px;
+}
+.top__header {
+  padding: 6px 0 6px 0;
+}
+.h-info__phones_link {
+  padding: 0 4px 0 4px;
+}
+.header__info_mail {
+  margin-left: 2rem;
+}
+.h-info__mail_link {
+  padding-right: 10px;
+}
+.header__info_social {
+  margin-left: 20px;
+}
+.h-info__social_block {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 0 5px;
+}
+.h-info__social_link {
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: url(../images/icons.png) no-repeat center center;
+  display: block;
+  height: 100%;
+  border-radius: 50%;
+  padding: 7px;
+  box-sizing: border-box;
+  transition: background 0.3s linear;
+}
+.h-info__social_link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.h-info__social_link.vk {
+  background-position: -130px -58px;
+}
+.h-info__social_link.inst {
+  background-position: -150px -58px;
+}
+.h-info__social_link.ytb {
+  background-position: -170px -59px;
+}
+.header__menu_item {
+  margin-left: 16px;
+}
+.header__menu_item:first-child {
+  margin-left: 0;
+}

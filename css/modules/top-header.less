@@ -1,0 +1,62 @@
+//main: ../style.less
+.top__header{
+    width: 100%;
+    background: @small-btn-color;
+    color: fade(white, 60%);
+
+    font-family: @f-med;
+    font-size: 12px;
+}
+.top__header{
+    padding: 6px 0 6px 0;
+}
+.h-info__phones_link{
+    padding: 0 4px 0 4px;
+}
+.header__info_mail{
+    margin-left: 2rem;
+}
+.h-info__mail_link{
+    padding-right: 10px;
+}
+.header__info_social{
+    margin-left: 20px;
+}
+.h-info__social_block{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 5px;
+}
+.h-info__social_link{
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: url(../images/icons.png) no-repeat center center;
+    display: block;
+    height: 100%;
+    border-radius: 50%;
+    padding: 7px;
+    box-sizing: border-box;
+
+    transition: background .3s linear;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &.vk{
+        background-position: -130px -58px;
+    }
+    &.inst{
+        background-position: -150px -58px;
+    }
+    &.ytb{
+        background-position: -170px -59px;
+    }
+}
+.header__menu_item{
+    margin-left: 16px;
+
+    &:first-child{
+        margin-left: 0;
+    }
+}

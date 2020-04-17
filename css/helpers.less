@@ -1,0 +1,85 @@
+//main: style.less
+
+@font-face{
+    font-family: Avenir Next Regular; 
+    src: url(../fonts/AvenirNextCyr-Regular.ttf); 
+
+    font-weight: 200;
+}
+@font-face{
+    font-family: Avenir Next Medium; 
+    src: url(../fonts/AvenirNextCyr-Medium.ttf); 
+
+    font-weight: 600;
+}
+@font-face{
+    font-family: Avenir Next Bold; 
+    src: url(../fonts/AvenirNextCyr-Bold.ttf); 
+
+    font-weight: 900;
+}
+.dfl{
+    display: flex;
+}
+.dbl{
+    display: block;
+}
+.jcc{
+    justify-content: center;
+}
+.jcb{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0 0.4rem 0;
+
+    cursor: url(../images/cursor.png), pointer;
+    transition: all .3s linear;
+
+    &--select{
+        width: 95px;
+        border-radius: 20px;
+        background: @small-btn-color;
+
+        &:hover{
+            background: @small-btn-hover;
+        }
+    }
+
+    &--info{
+        background: @btn-color;
+        width: 110px;  
+    }
+
+    &--more{
+        background: @btn-color;
+        width: 160px;
+        border-radius: 6px;
+
+        &:hover{
+            box-shadow: 0px 4px 20px rgba(251, 81, 61, 0.8);
+        }
+    }
+}
+.text-input{
+    width: 230px;
+    padding: 14px 18px 14px 0;
+    background-color: white;
+    font-size: 1.1rem;
+    transition: border .3s libear;
+
+    &:hover{
+        border: 2px solid @input-borders;
+        color: fade(@main-text-color, 60%);
+    }
+}
+.icon{
+    display: block;
+    background: url(../images/icons.png) no-repeat;
+}
