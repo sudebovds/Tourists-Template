@@ -8,7 +8,7 @@ body {
 }
 body {
   font-family: Avenir Next Regular;
-  font-style: 15px;
+  font-size: 15px;
   box-sizing: border-box;
 }
 header,
@@ -19,7 +19,13 @@ div,
 nav,
 ul,
 li,
-p {
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -87,8 +93,12 @@ a {
   background: #158CF5;
 }
 .btn--info {
+  padding: 0.7rem 1.2rem 0.7rem 1.2rem;
   background: #FB513D;
-  width: 110px;
+  border-radius: 5px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
 }
 .btn--more {
   background: #FB513D;
@@ -112,6 +122,46 @@ a {
 .icon {
   display: block;
   background: url(../images/icons.png) no-repeat;
+}
+.block-title {
+  font-family: Avenir Next Bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: #333333;
+}
+.more-link {
+  font-family: Avenir Next Bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #1168B6;
+  transition: color 0.3s linear;
+}
+.more-link:hover {
+  color: #158CF5;
+}
+.linear-gradiend {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.5;
+  border-radius: 6px;
+}
+.main__header {
+  height: 100%;
+}
+.top__header,
+.medium__header,
+.header__nav {
+  position: relative;
+  z-index: 1;
+}
+.medium__header {
+  background-color: transparent;
 }
 .top__header {
   width: 100%;
@@ -168,4 +218,228 @@ a {
 }
 .header__menu_item:first-child {
   margin-left: 0;
+}
+.medium__h-logo_title {
+  padding: 20px 0 0 0;
+  font-family: Avenir Next Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+  color: white;
+}
+.medium__h-logo_subtitle {
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  padding-top: 8px;
+  color: white;
+}
+.medium__header_sublogo {
+  max-width: 11.8rem;
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  color: white;
+  padding: 1.33rem 0 0 1.2rem;
+}
+.header__info_adress {
+  max-width: 10.33rem;
+  margin-top: 1.67rem;
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  color: white;
+}
+.header__info_backcall {
+  margin: 1.67rem 0 0 3.7rem;
+  color: white;
+}
+.header__info_contacts {
+  margin: 1.67rem 0 0 2rem;
+}
+.info__contacts_phone {
+  border: none;
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  color: white;
+  margin-bottom: 0.53rem;
+  background: transparent;
+}
+.info__contacts_phone:focus,
+.info__contacts_phone:active {
+  outline: none;
+}
+.info__contacts_time {
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  opacity: 0.6;
+  padding-left: 5px;
+  color: white;
+}
+.header__nav_wrapper {
+  background: #1168B6;
+  border-radius: 5px;
+  margin-top: 1.33rem;
+}
+.header__navigation_link {
+  display: flex;
+  padding: 1.3rem 0 1.13rem 2rem;
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: white;
+}
+.navigation__link_more {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/icons.png) center center no-repeat;
+  background-position: -71px -15px;
+  margin-top: 0.2rem;
+  margin-left: 0.7rem;
+}
+.header__nav_cab-item {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
+  margin-right: 2rem;
+  cursor: pointer;
+  background: url(../images/icons.png);
+}
+.header__nav_cab-item.nav_personal {
+  background-position: -6px -10px;
+}
+.header__nav_cab-item.nav_search {
+  background-position: -35px -10px;
+}
+.header__slider {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3.73rem;
+}
+.header__slider_item {
+  width: 100%;
+  position: relative;
+}
+.header__slide_link {
+  display: block;
+  width: 100%;
+}
+.header__slider_img {
+  width: 100%;
+  cursor: pointer;
+}
+.slide-dark {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: -4px;
+  cursor: pointer;
+}
+.preferences {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 8.67rem;
+}
+.preferences__item {
+  margin-right: 2rem;
+}
+.preferences__item:last-child {
+  margin-right: 0;
+}
+.preferences__ico_img {
+  width: auto;
+  height: 73px;
+}
+.preferences__item_hd {
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #333333;
+  margin: 1.33rem 0 0.67rem 0;
+}
+.preferences__item_p {
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+.content__left {
+  width: 52rem;
+}
+.content__left_tours {
+  flex-wrap: wrap;
+}
+.content__l-tours_item {
+  position: relative;
+  margin: 0 1.4rem 1.5rem 0;
+}
+.content__l-tours_item:nth-child(even) {
+  margin-right: 0;
+}
+.content__left_title {
+  margin-bottom: 0.9rem;
+}
+.content__left_more {
+  margin: auto;
+  margin-right: 0;
+}
+.content__left_description {
+  max-width: 42.3rem;
+  margin-bottom: 2.67rem;
+}
+.left__description_text {
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+}
+.l-tours__item_image {
+  border-radius: 6px;
+  position: relative;
+}
+.l-tours__image_img {
+  display: block;
+  border-radius: 6px;
+}
+.l-tours__item_description {
+  position: absolute;
+  z-index: 1;
+  bottom: 2rem;
+  left: 2rem;
+  max-width: 13.13rem;
+}
+.l-tours__description_title {
+  font-family: Avenir Next Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
 }
