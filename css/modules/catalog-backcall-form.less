@@ -1,0 +1,76 @@
+//main: ../style.less
+
+.content__backcall{
+    width: 100%;
+
+    position: relative;
+
+    background: url(../images/form-bgr.jpg) no-repeat center center;
+    background-size: cover;
+
+    margin: 5.33rem 0 5.33rem 0;
+}
+.content__backcall_wrapper{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 0;
+
+    background: @popup-bgr;
+    opacity: .9;
+}
+.backcall__form{
+    position: relative;
+    z-index: 1;
+
+    color: white;
+
+    padding: 3.33rem 5.2rem 3.33rem 2.67rem;
+}
+.backcall__form_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+
+    margin-bottom: 0.67rem;
+}
+.backcall__form_description{
+    margin-bottom: 1.33rem;
+}
+.backcall__form_txt{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+.backcall__form_input{
+    padding: .93rem 0 .93rem 1.2rem;
+    margin-right: 0.93rem;
+    margin-bottom: 0.93rem;
+
+    border-radius: 6px;
+    border: 0;
+
+    &:focus{
+        outline: none;
+    }
+}
+.backcall__form_submit{
+    padding: .93rem 3rem .93rem 3rem;
+}
+.backcall__form_info{
+    max-width: 221px;
+    display: inline-flex;
+
+    margin-left: 0.93rem;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    vertical-align: middle;
+
+    opacity: .3;
+}

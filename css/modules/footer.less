@@ -1,0 +1,170 @@
+//main: ../style.less
+
+.foter{
+    background: @footer-bgr;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/*FOOTER TOP MENU*/
+
+.footer__nav{
+    width: 80%;
+}
+.first-level .footer__nav_link, .footer__contact_title{
+    display: block;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+
+    margin-bottom: 1.33rem;
+}
+.footer__nav_inner .second-level{
+    margin-bottom: 1.01rem;
+}
+.second-level .footer__nav_link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: white;
+
+    opacity: 0.6;
+}
+
+/*FOOTER TOP CONTACTS*/
+
+.footer__top_contacts{
+    width: 20%;
+    margin-left: 6rem;
+
+    color: white;
+}
+.footer__contacts_item{
+    position: relative;
+    margin-bottom: 1.01rem;
+}
+.footer__contacts_ico{
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    left: 0;
+    top: 2px;
+
+    background: url(../images/icons.png) no-repeat;
+}
+.ico-phone{
+    background-position: -8px -57px;
+}
+.ico-adress{
+    background-position: -37px -54px;
+}
+.ico-mail{
+    background-position: -68px -54px;
+}
+.footer__contacts_link, .footer__contacts_adress{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    padding-left:  1.5rem;
+}
+.footer__contacts_time{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 100%;
+
+    margin-top: 4px;
+    padding-left:  1.5rem;
+
+    opacity: 0.6;
+}
+.footer__contact_send{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+}
+.footer__send_description{
+    margin-top: 1.98rem;
+    margin-bottom: 1.98rem;
+}
+
+/*FOTER FORM*/
+
+.footer__send_form{
+    position: relative;
+    width: 255px;
+}
+.footer__send_input{
+    width: 255px;
+    height: 44px;
+
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    padding-left: 1.2rem;
+
+    &:focus{
+        outline: none;
+    }
+}
+.footer__send_subs{
+    background: @btn-color url(../images/icons.png) no-repeat center center;
+    background-position: -83px -42px;
+
+    border: 0;
+    padding: 23px 25px 23px 23px;
+
+    position: absolute;
+    top: 0;
+    right: -20px;
+
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+}
+.footer__contact_pays{
+    background: url(../images/paymets.png) no-repeat center center;
+    background-size: contain;
+
+    width: 100%;
+    height: 24px;
+
+    margin-top: 2.67rem;
+}
+
+/*FOOTER HR*/
+
+.footer__hr{
+    background: #FFFFFF;
+    opacity: 0.2;
+
+    margin-top: 2.67rem;
+    margin-bottom: 2rem;
+}
+
+/*FOOTER BOTTOM*/
+
+.footer__bottom{
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+
+    opacity: 0.4;
+}
+.footer__bottom_left{
+    width: 80%;
+}
+.footer__bottom_menu{
+    margin-bottom: 6px;
+}

@@ -40,7 +40,8 @@
     padding: 0.4rem 0 0.4rem 0;
     border: none;
 
-    cursor: url(../images/cursor.png), pointer;
+    /*cursor: url(../images/cursor.png), pointer;*/
+    cursor: pointer;
     transition: all .3s linear;
 
     &--select{
@@ -120,4 +121,16 @@
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0.5;
     border-radius: 6px;
+}
+.no-overflow{
+    overflow: hidden;
+}
+.popup-active{
+    display: flex !important;
+}
+.over-pages{
+    color: @main-text-color !important;
+}
+.over-header{
+    height: auto;
 }

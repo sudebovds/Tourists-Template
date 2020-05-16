@@ -10,8 +10,9 @@ body{
     font-family: @f-reg;
     font-size: 15px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
-header, section, main, aside, div, nav, ul, li, p, img, h1, h2, h3, h4, h5{
+header, section, main, aside, div, nav, ul, li, p, img, h1, h2, h3, h4, h5, map, iframe{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,6 +24,35 @@ a{
     color: inherit;
     text-decoration: none;
 }
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
 .container{
     width: @main-width;
     margin: 0 auto;
@@ -46,3 +76,16 @@ a{
 @import "modules/main-info.less";
 @import "modules/main-right-news.less";
 @import "modules/main-left-sale.less";
+@import "modules/main-map.less";
+@import "modules/main-gallery.less";
+@import "modules/main-reviews.less";
+@import "modules/main-reviews-item.less";
+@import "modules/main-about.less";
+@import "modules/footer.less";
+@import "modules/backcall-popup.less";
+@import "over-pages/tours-in-spb-main.less";
+@import "modules/aside-navigation.less";
+@import "modules/catalog-tours.less";    
+@import "modules/catalog-backcall-form.less";
+@import "modules/catalog-tours-item.less";
+@import "modules/catalog-description.less";   

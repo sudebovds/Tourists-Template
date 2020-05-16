@@ -1,0 +1,59 @@
+//main: ../style.less
+
+.content{
+    position: relative;
+}
+.content__breadcrumbs{
+    margin-top: 4rem;
+    margin-bottom: 0.27rem;
+}
+.content__breadcrumbs_item{
+    margin-right: 0.53rem;
+
+    &:last-child>.content__breadcrumbs_link::after{
+        display: none;
+    }
+}
+.content__breadcrumbs_link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+
+    padding-right: 0.7rem;
+
+    position: relative;
+
+    &.active-link{
+        color: @small-btn-color;
+    }
+
+    &::after{
+        content: '';
+        display: block;
+        width: 4px;
+        height: 6px;
+
+        position: absolute;
+        right: 0;
+        top: 5px;
+
+        background: url(../images/devider.svg) no-repeat;
+    }
+}
+.content__header{
+    margin-bottom: 2.67rem;
+}
+.content__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+/*ASIDE SECTION*/
+
+.main__aside{
+    max-width: 255px;
+}
+
