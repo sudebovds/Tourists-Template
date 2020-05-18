@@ -1,0 +1,46 @@
+//main: ../style.less
+
+.catalog__seasons{
+    margin-bottom: 2.67rem;
+}
+.catalog__seasons_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+
+    margin-bottom: 0.67rem;
+}
+.seasons__switcher_btn{
+    padding: .93rem 2.33rem .93rem 2.33rem;
+    margin-right: 0.67rem;
+
+    border: 2px solid @small-btn-color;
+    border-radius: 6px;
+
+    background-color: white;
+    color: @small-btn-color;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    transition: all .4s linear; 
+
+    cursor: pointer;
+
+    &.active-season{
+        background-color: @small-btn-color;
+
+        color: white;
+
+        &:hover{
+            background-color: @small-btn-hover;
+            border: 2px solid @small-btn-hover;
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+}

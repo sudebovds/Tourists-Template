@@ -10,13 +10,19 @@ $(document).ready(function(){
                 items: 2
             });
         }
-        else if(cur = "main-slider"){
+        if(cur == "main-slider"){
             $(this).owlCarousel({
                 items: 1, 
                 autoplay: true,
                 autoplayTimeout: 9000
             });
         }
+        if(cur == "detail-sld"){
+            $(this).owlCarousel({
+                items: 1,
+                nav: true
+            });
+        }        
     });
 
     $(buttons).on("click", function(){
