@@ -1,0 +1,32 @@
+//main: ../style.less
+
+.small-item{
+    max-width: 260px;
+
+    &:nth-child(even){
+        margin: 0 1.4rem 1.5rem 0;
+    }
+
+    &:nth-child(3n + 3){
+        margin-right: 0;
+    }
+}
+.l-tours__description_season{
+    margin-top: 0.67rem;
+}
+.small-item:last-child .l-tours__description_season{
+    margin-bottom: 1.33rem;
+}
+.description__season_choise{
+    padding-left: .67rem;
+    padding-right: .67rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 100%;
+
+    &:first-child{
+        margin-right: 0.4rem;
+    }
+}

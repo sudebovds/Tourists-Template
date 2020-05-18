@@ -476,6 +476,7 @@ input:focus:-ms-input-placeholder {
 .l-tours__image_img {
   display: block;
   border-radius: 6px;
+  width: 100%;
 }
 .l-tours__item_description {
   position: absolute;
@@ -1271,4 +1272,107 @@ input:focus:-ms-input-placeholder {
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 0.93rem;
+}
+.main__decsription_lis {
+  margin-bottom: 0.93rem;
+}
+.main__description_l-item {
+  margin-bottom: 0.67rem;
+}
+.main__description_l-item::before {
+  content: '•';
+  color: #1168B6;
+}
+.main__description_l-item:last-child {
+  margin-bottom: 0;
+}
+.catalog__pages {
+  margin-top: 2.67rem;
+}
+.catalog__pages_manip,
+.catalog__pages_page {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #1168B6;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.catalog__pages_manip {
+  background: #1168B6 url(../images/icons.png) no-repeat center center;
+  transition: background-color 0.3s linear;
+  color: white;
+}
+.catalog__pages_manip.page-prev {
+  background-position: -106px -7px;
+  margin-right: 2rem;
+}
+.catalog__pages_manip.page-next {
+  background-position: -84px -7px;
+  margin-left: 2rem;
+}
+.catalog__pages_manip:hover {
+  background-color: #158CF5;
+  border: 2px solid #158CF5;
+}
+.catalog__pages_page {
+  margin-right: 0.67rem;
+}
+.catalog__pages_page.active-page {
+  background-color: #1168B6;
+  transition: background-color 0.3s linear;
+}
+.catalog__pages_page.active-page:hover {
+  background-color: #158CF5;
+  border: 2px solid #158CF5;
+}
+.catalog__pages_page:last-child {
+  margin-right: 0;
+}
+.catalog__pages_over {
+  height: 100%;
+  margin-right: 0.67rem;
+}
+.pages__over_txt {
+  color: #1168B6;
+  display: inline-flex;
+  vertical-align: sub;
+}
+.catalog__pages_page.active-page .pages__page_number {
+  color: white;
+}
+.pages__page_number {
+  display: inline-flex;
+  vertical-align: sub;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1168B6;
+}
+.small-item {
+  max-width: 260px;
+}
+.small-item:nth-child(even) {
+  margin: 0 1.4rem 1.5rem 0;
+}
+.small-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.l-tours__description_season {
+  margin-top: 0.67rem;
+}
+.small-item:last-child .l-tours__description_season {
+  margin-bottom: 1.33rem;
+}
+.description__season_choise {
+  padding-left: 0.67rem;
+  padding-right: 0.67rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 100%;
+}
+.description__season_choise:first-child {
+  margin-right: 0.4rem;
 }
