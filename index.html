@@ -184,7 +184,13 @@
                     <a href="#" class="header__slide_link">  
                         <img src="assests/Школьные туры/bw1920.jpg" alt="" class="header__slider_img">
                     </a>
-                </div>                                                                                       
+                </div>    
+                <div class="header__slider_item">
+                    <a href="#" class="header__slide_link">  
+                        <img src="assests/Экскурсии по Санкт-Петербургу/bw1920.jpg" alt="" class="header__slider_img">
+                    </a>
+                </div>   
+
             </div>
 
             <!--END OF MAIN HEADER SLIDER SECTION-->
@@ -628,20 +634,22 @@
         <section class="main-map">
             <div class="main-map__wrapper dfl jcb">
                 <div class="main-map__left">
-                    <h2 class="main-map__left_title">
-                        Карта музеев, достопримечательностей, развлекательных мест Санкт-Петербурга и России
-                    </h2>
-                    <p class="main-map__left_description">
-                        На данной карте представлены объекты, которые участвуют в наших турах. На странице любого музея вы сможете посмотреть экскурсии, в которых участвует каждый объект и подобрать для себя оптимальный вариант.
-                    </p>
-                    <p class="main-map__left_description">
-                        Если необходима консультация, то наши менеджеры 
-                        с удовольствием помогут вам и подберут наилучший вариант под ваши задачи.                        
-                    </p>                    
-                    <div class="main-map__left_contact">
-                        <button class="main-map__left_btn btn btn--info">
-                            Задать вопрос специалисту
-                        </button>
+                    <div class="main-map__left_inner">
+                        <h2 class="main-map__left_title">
+                            Карта музеев, достопримечательностей, развлекательных мест Санкт-Петербурга и России
+                        </h2>
+                        <p class="main-map__left_description">
+                            На данной карте представлены объекты, которые участвуют в наших турах. На странице любого музея вы сможете посмотреть экскурсии, в которых участвует каждый объект и подобрать для себя оптимальный вариант.
+                        </p>
+                        <p class="main-map__left_description">
+                            Если необходима консультация, то наши менеджеры 
+                            с удовольствием помогут вам и подберут наилучший вариант под ваши задачи.                        
+                        </p>                    
+                        <div class="main-map__left_contact">
+                            <button class="main-map__left_btn btn btn--info">
+                                Задать вопрос специалисту
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="main-map__right">
@@ -1046,13 +1054,18 @@
                             <input type="text" class="popup__form_input" placeholder="Ваше имя">
                             <input type="text" class="popup__form_input" placeholder="Телефон">
                             <input type="text" class="popup__form_input" placeholder="Email">
-                            <input type="text" class="popup__form_input" placeholder="Интересующая услуга">
+                            <select name="" id="" class="popup__form_options" >
+                                <option value="" class="popup__form_option" selected>Интересующая услуга</option>
+                                <option value="" class="popup__form_option">Услуга 1</option>
+                                <option value="" class="popup__form_option">Услуга 2</option>
+                                <option value="" class="popup__form_option">Услуга 3</option>
+                                <option value="" class="popup__form_option">Услуга 4</option>
+                            </select>
                             <textarea name="" id="" cols="30" rows="10" class="popup__form_textarea" placeholder="Сообщение"></textarea>
                             <div class="popup__submit_zone">
                                 <button class="popup__form_submit btn btn--info">Оставаить заявку</button>
-                                <checkbox class="popup__form_checkbox">
+                                <input type="checkbox" class="popup__form_checkbox" checked>
                                     Я согласен(а) на <a href="#" class="popup__form_link">обработку персональных данных</a> 
-                                </checkbox>
                             </div>
                         </div>
                     </form>

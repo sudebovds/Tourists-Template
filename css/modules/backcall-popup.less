@@ -66,22 +66,39 @@
     font-size: 14px;
     line-height: 19px;
 }
-.popup__form_input, .popup__form_textarea{
+.popup__form_input, .popup__form_textarea, .popup__form_options{
     width: 270px;
     padding: 11px 0 11px 18px;
     border: 1px solid #CCCCCC;
     border-radius: 6px;
     margin-bottom: 10px;
+
+    outline: none;
+}
+.popup__form_textarea{
+    margin: 0px 0px 10px;
+    height: 105px;
+    outline: none;
+}
+.popup__form_options{
+    width: 290px;
 }
 .popup__submit_zone{
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 2rem;
+
+    position: relative;
 }
 .popup__form_submit{
     padding: 11px 0 11px 0;
     margin-bottom: 1.33rem;
+}
+.popup__form_checkbox{
+    position: absolute;
+    top: 56px;
+    left: 55px;
 }
 .popup__form_link{
     color: @small-btn-color;

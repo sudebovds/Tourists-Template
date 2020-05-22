@@ -13,9 +13,21 @@
     position: relative;
     margin: 0 1.4rem 1.5rem 0;
 
+    transition: box-shadow .4s linear;
+
+    background: transparent;
+
+    border-radius: 6px;
+
     &:nth-child(even){
         margin-right: 0;
     }
+
+    &:hover{
+        box-shadow: rgba(0,0,0, .6) 6px 12px 20px;
+    }
+
+    cursor: pointer;
 }
 .content__left_title{
     margin-bottom: 0.9rem;
@@ -23,6 +35,8 @@
 .content__left_more{
     margin: auto;
     margin-right: 0;
+
+    font-family: @f-med;
 }
 .content__left_description{
     max-width: 42.3rem;
