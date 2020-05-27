@@ -2,10 +2,13 @@
 
 .header__slider{
     position: absolute;
-    top: 0;
+    top: 28px;
     z-index: 0;
-   /* width: 100%;
-    height: 100%;*/
+
+    @media @mwtablet{
+        display: none;
+        visibility: hidden;
+    }
 }
 .header__slider_item{
     width: 100%;

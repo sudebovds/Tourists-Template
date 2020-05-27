@@ -14,7 +14,9 @@ $(document).ready(function(){
             $(this).owlCarousel({
                 items: 1, 
                 autoplay: true,
-                autoplayTimeout: 9000
+                autoplayTimeout: 9000,
+                autoWidth: false,
+                center: true
             });
         }
         if(cur == "detail-sld"){

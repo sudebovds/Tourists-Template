@@ -13,6 +13,10 @@ body{
     font-size: 15px;
     box-sizing: border-box;
     overflow-x: hidden;
+
+    @media @mwtablet{
+        font-size: 10px;
+    }
 }
 header, section, main, aside, div, nav, ul, li, p, img, h1, h2, h3, h4, h5, map, iframe{
     box-sizing: border-box;
@@ -58,6 +62,10 @@ input:focus:-ms-input-placeholder {
 .container{
     width: @main-width;
     margin: 0 auto;
+
+    @media @mwtablet{
+        width: @main-width-tablet;
+    }
 }
 
 
@@ -97,3 +105,4 @@ input:focus:-ms-input-placeholder {
 @import "over-pages/tours-for-schools.less";
 @import "over-pages/detail-page.less";
 @import "over-pages/about-and-over-services.less";
+@import "modules/header-mobile.less";

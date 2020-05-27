@@ -2,11 +2,21 @@
 
 .main__header{
     height: 100%;
+    min-width: @main-width;
 
     margin-bottom: 6rem;
 
+    position: relative;
+
     &.over-header{
         height: auto;
+    }
+
+    @media @mw1220{
+        margin-bottom: -180px;
+    }
+    @media @mwtablet{
+        display: none;
     }
 }
 .top__header, .medium__header, .header__nav{
