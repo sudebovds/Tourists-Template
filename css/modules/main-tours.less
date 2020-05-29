@@ -5,9 +5,17 @@
 }
 .content__left{
     width: 52rem;
+
+    @media @mwtablet{ 
+        width: 100%;
+    }
 }
 .content__left_tours{
     flex-wrap: wrap;
+
+    @media @mwtablet{
+        flex-direction: column;
+    }
 }
 .content__l-tours_item{
     position: relative;
@@ -28,15 +36,35 @@
     }
 
     cursor: pointer;
+
+    @media @mwtablet{
+        width: 100%;
+    }
 }
 .content__left_title{
     margin-bottom: 0.9rem;
+    
+    @media @mwtablet{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+
+        margin-bottom: 10px;
+    }
 }
 .content__left_more{
     margin: auto;
     margin-right: 0;
 
     font-family: @f-med;
+
+    @media @mwtablet{
+        display: none;
+    }
+}
+.mobile__left_more{
+    margin-bottom: 40px;
 }
 .content__left_description{
     max-width: 42.3rem;

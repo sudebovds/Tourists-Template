@@ -3,10 +3,52 @@
 .headeer__main_mobile{
     display: none;
 
+    position: relative;
+
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+
     @media @mwtablet{
         display: flex;
     }
 }
 .mobile__menu_wrapper{
     display: none;
+}
+.mobile__menu_burger{
+    display: flex;
+
+    margin-right: 18px;
+
+    font-size: 28px;
+    color: @main-text-color;
+    cursor: pointer;
+}
+.header__mobile_personal{
+    position: absolute;
+    right: 20px;
+
+    font-size: 28px;
+}
+.mobile_personal_item.nav_personal{
+    margin-right: 2rem;
+}
+.header__mobil_title-text, .header__mobil_subtitle-text{
+    font-style: normal;
+    line-height: 100%;
+
+    color: @small-btn-color;
+}
+.header__mobil_title-text{
+    font-family: @f-bld;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    margin-bottom: 6px;
+}
+.header__mobil_subtitle-text{
+    font-weight: normal;
+    font-size: 10px;
 }

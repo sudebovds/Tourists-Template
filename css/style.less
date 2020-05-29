@@ -13,10 +13,6 @@ body{
     font-size: 15px;
     box-sizing: border-box;
     overflow-x: hidden;
-
-    @media @mwtablet{
-        font-size: 10px;
-    }
 }
 header, section, main, aside, div, nav, ul, li, p, img, h1, h2, h3, h4, h5, map, iframe{
     box-sizing: border-box;
@@ -65,6 +61,8 @@ input:focus:-ms-input-placeholder {
 
     @media @mwtablet{
         width: @main-width-tablet;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -106,3 +104,5 @@ input:focus:-ms-input-placeholder {
 @import "over-pages/detail-page.less";
 @import "over-pages/about-and-over-services.less";
 @import "modules/header-mobile.less";
+@import "modules/subheader-mobile-title.less";
+@import "modules/main-content.less";
