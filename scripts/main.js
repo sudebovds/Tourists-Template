@@ -16,8 +16,14 @@ $(document).ready(function(){
                 autoplay: true,
                 autoplayTimeout: 9000,
                 autoWidth: false,
-                center: true
+                center: true,
+                loop: true,
+                nav: true
             });
+            $(this).click(function() {
+                $(this).trigger('next.owl.carousel');
+                $(this).trigger('prev.owl.carousel');
+            })
         }
         if(cur == "detail-sld"){
             $(this).owlCarousel({

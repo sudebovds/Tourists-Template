@@ -31,3 +31,44 @@
     top: -4px;
     cursor: pointer;
 }
+.header__slider {
+    >.owl-nav{
+        position: absolute;
+        top: 50%;
+
+        width: 100%;
+
+        >button{
+            position: absolute;
+            z-index: 1;
+
+            width: 34px;
+            height: 34px;
+
+            background: rgba(255, 255, 255, .6) !important;
+
+            border-radius: 50%;
+
+            transition: all .4s linear;
+
+            >span{
+                color: @small-btn-color;
+            }
+
+            &:hover, &:focus, &:active{
+                outline: none;
+            }
+
+            &:hover{
+                background: rgba(255, 255, 255, .9) !important;
+            }
+
+            &.owl-next{
+                right: 50px;
+            }
+            &.owl-prev{
+                left: 50px;
+            }
+        }
+    }
+}

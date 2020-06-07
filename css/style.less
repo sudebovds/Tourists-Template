@@ -15,6 +15,12 @@ body{
     overflow-x: hidden;
 
     color: @main-text-color;
+
+    webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 }
 header, section, main, aside, div, nav, ul, li, p, img, h1, h2, h3, h4, h5, map, iframe{
     box-sizing: border-box;
@@ -55,6 +61,16 @@ input:-ms-input-placeholder {
 }
 input:focus:-ms-input-placeholder {
     color: transparent;
+}
+option{
+    outline: none;
+    border: none;
+
+    &:focus, &:active, &:hover{
+        outline: none !important;
+        border: none;
+        background: transparent;
+    }
 }
 
 .container{
