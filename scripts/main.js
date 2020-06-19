@@ -18,7 +18,8 @@ $(document).ready(function(){
                 autoplayTimeout: 9000,
                 autoWidth: false,
                 center: true,
-                loop: true
+                loop: true,
+                nav: true
             });
         }
         if(cur == "detail-sld"){
