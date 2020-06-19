@@ -2,15 +2,73 @@
 
 .reviews{
     margin-bottom: 6.67rem;
-}
-.reviews__header{
-    margin-bottom: 2.67rem;
-}
-.reviews__header__title{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 140%;
+    position: relative;
 
-    color: @main-text-color;
+    &__header{
+        margin-bottom: 2.67rem;
+
+        &__title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 140%;
+        
+            color: @main-text-color;
+        }
+    }
+
+    .owl-nav{
+
+        button{
+            position: absolute;
+            bottom: 50%;
+
+            display: flex;
+
+            background: @small-btn-color !important;
+            color: white !important;
+            font-size: 32px !important;
+
+            border-radius: 50%;
+
+            outline: none;
+
+            &.owl-prev {
+                left: -7%;
+            }
+
+            &.owl-next{
+                right: -4%;
+            }
+
+            span{
+                border-radius: 44px;
+                box-sizing: border-box;
+                padding: 0px 17px 5px 17px;
+            }
+        }
+    }
+
+    .owl-dots{
+        text-align: center;
+        margin-top: 40px;
+        margin-right: 2rem;
+        
+        .owl-dot{
+            outline: none;
+
+            span{
+                display: block;
+                width: 15px;
+                height: 15px;
+            
+                background: url(../images/icons.png) no-repeat;
+                background-position: -185px -29px;
+            }
+
+            &.active span{
+                background-position: -185px -10px !important;
+            }
+        }
+    }
 }

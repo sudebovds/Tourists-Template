@@ -8,7 +8,8 @@ $(document).ready(function(){
         let cur = $(this).data("slider");
         if(cur == "reviews"){
             $(this).owlCarousel({
-                items: 2
+                items: 2, 
+                nav: true
             });
         }
         if(cur == "main-slider"){
