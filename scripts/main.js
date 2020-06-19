@@ -2,6 +2,7 @@ $(document).ready(function(){
     const slider = $("[data-slider]");
     const buttons = $("[data-button]");
     const popups = $("[data-popup]");
+    const nextSlideArrow = $("[data-switcher]");
 
     slider.each(function(){
         let cur = $(this).data("slider");
@@ -17,13 +18,8 @@ $(document).ready(function(){
                 autoplayTimeout: 9000,
                 autoWidth: false,
                 center: true,
-                loop: true,
-                nav: true
+                loop: true
             });
-            $(this).click(function() {
-                $(this).trigger('next.owl.carousel');
-                $(this).trigger('prev.owl.carousel');
-            })
         }
         if(cur == "detail-sld"){
             $(this).owlCarousel({
@@ -32,6 +28,12 @@ $(document).ready(function(){
             });
         }        
     });
+    
+    $(nextSlideArrow).on("click", () => {
+        /*$("[data-slider='main-slider']").trigger("next.owl.carousel");*/
+        $('html,body').stop().animate({ scrollTop: $('[data-anchor="catalog"]').offset().top }, 1000);
+        e.preventDefault();
+    })
 
     $(buttons).on("click", function(){
         $(popups).addClass("popup-active");
