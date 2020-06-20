@@ -1,0 +1,82 @@
+//main: ../style.less
+
+.slider{
+    width: 100%;
+    position: relative;
+
+    margin-bottom: 5rem;
+
+    &__inner{
+        position: relative; 
+    }
+
+    .owl-nav{
+        position: absolute;
+        top: 50%;
+
+        width: 100%;
+
+        >button{
+            position: absolute;
+            z-index: 1;
+
+            width: 34px;
+            height: 34px;
+
+            background: rgba(255, 255, 255, .6) !important;
+
+            border-radius: 50%;
+
+            transition: all .4s linear;
+
+            >span{
+                color: @small-btn-color;
+            }
+
+            &:hover, &:focus, &:active{
+                outline: none;
+            }
+
+            &:hover{
+                background: rgba(255, 255, 255, .9) !important;
+            }
+
+            &.owl-next{
+                right: 50px;
+            }
+            &.owl-prev{
+                left: 50px;
+            }
+        }
+    }
+
+    &__next{
+        position: absolute;
+        bottom: 70px;
+        z-index: 3;
+        left: 50%;
+
+        height: 15.2px;
+        width: 28px;
+        background: url(../images/dawn.svg) center center no-repeat;
+
+        cursor: pointer;
+
+        transition: opacity .3s ease;
+
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: next;
+        animation-timing-function: linear;
+
+        @keyframes next {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
