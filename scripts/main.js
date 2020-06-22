@@ -9,7 +9,16 @@ $(document).ready(function(){
         if(cur == "reviews"){
             $(this).owlCarousel({
                 items: 2, 
-                nav: true
+                nav: true,
+                responsive:{
+                    1200: {
+                        items: 2
+                    },
+                    350: {
+                        items: 1,
+                        nav: false
+                    }
+                }
             });
         }
         if(cur == "main-slider"){

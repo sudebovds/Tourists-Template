@@ -3,11 +3,21 @@
 .content__right{
     max-width: 15.5rem;
     margin-left: 2rem;
+
+    @media @mwtablet{
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 .content__right_news{
     padding: 1.6rem 1.6rem 1.33rem 1.6rem;
     border: 1px solid #C4C4C4;
     border-radius: 6px;
+
+    @media @mwtablet{
+        margin-bottom: 50px;
+    }
 }
 .content__right_title{
     font-family: @f-bld;

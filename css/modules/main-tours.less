@@ -2,6 +2,10 @@
 
 .content__left_block{
     margin-bottom: 6.67rem;
+
+    @media @mwtablet{
+        margin-bottom: 50px;
+    }
 }
 .content__left{
     width: 52rem;
@@ -14,7 +18,7 @@
     flex-wrap: wrap;
 
     @media @mwtablet{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 .content__l-tours_item{
@@ -38,7 +42,15 @@
     cursor: pointer;
 
     @media @mwtablet{
+        width: 49%;
+        margin: 0 10px 10px 0;
+    }
+
+    @media @mwmobile{
         width: 100%;
+
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
 .content__left_title{

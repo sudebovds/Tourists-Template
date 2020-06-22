@@ -1,5 +1,13 @@
 //main: ../style.less
 
+.left__popular_wrapper{
+    @media @mwtablet{
+        margin-right: 0;
+        flex-wrap: wrap;
+
+        justify-content: inherit;
+    }
+}
 .left__popular_item{
     font-family: @f-reg;
     max-width: 262px;
@@ -13,6 +21,14 @@
 
     &:hover{
         box-shadow:0 10px 25px 0 rgba(0, 0, 0, .3);
+    }
+
+    @media @mwtablet{
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        max-width: 48%;
+        width: 48%;
     }
 
 }
