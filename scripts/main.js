@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     slider.each(function(){
         let cur = $(this).data("slider");
-        if(cur == "reviews"){
+        if(cur === "reviews"){
             $(this).owlCarousel({
                 items: 2, 
                 nav: true,
@@ -21,7 +21,7 @@ $(document).ready(function(){
                 }
             });
         }
-        if(cur == "main-slider"){
+        if(cur === "main-slider"){
             $(this).owlCarousel({
                 items: 1, 
                 autoplay: true,
@@ -32,12 +32,17 @@ $(document).ready(function(){
                 nav: true
             });
         }
-        if(cur == "detail-sld"){
+        if(cur === "detail-sld"){
             $(this).owlCarousel({
                 items: 1,
                 nav: true
             });
-        }        
+        }
+        if(cur === "popular-mobile"){
+            $(this).owlCarousel({
+                items: 1
+            });
+        }      
     });
     
     $(nextSlideArrow).on("click", () => {

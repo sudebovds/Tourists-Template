@@ -1,5 +1,11 @@
 //main: ../style.less
 
+.content__left_info{
+    @media @mwmobile{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .left__info_item{
     font-family: @f-reg;
     position: relative;
@@ -19,6 +25,10 @@
         width: 48%;
         margin-right: 10px;
         margin-bottom: 10px;
+    }
+
+    @media @mwmobile{
+        width: 100%;
     }
 }
 .left__info_description{
