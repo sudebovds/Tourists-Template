@@ -5,6 +5,10 @@
     padding-top: 4rem;
     padding-bottom: 2rem;
 
+    @media @mwmobile{
+        margin-top: 3rem;
+    }
+
     /*FOOTER TOP MENU*/
 
     &__top{
@@ -21,6 +25,15 @@
         @media @mwtablet{
             width: 100%;
         }
+
+        &_wrapper{
+            display: flex;
+            justify-content: space-between;
+
+            @media @mwmobile{
+                flex-direction: column;
+            }
+        }
     }
 }
 
@@ -34,6 +47,10 @@
     line-height: 100%;
 
     margin-bottom: 1.33rem;
+
+    @media @mwmobile{
+        font-size: 14px;
+    }
 
     @media @mwtablet{
         font-size: 12px;
@@ -50,6 +67,10 @@
     color: white;
 
     opacity: 0.6;
+
+    @media @mwmobile{
+        font-size: 13px;
+    }
 
     @media @mwtablet{
         font-size: 10px;
@@ -204,6 +225,10 @@
     line-height: 140%;
 
     opacity: 0.4;
+
+    @media @mwmobile{
+        flex-direction: column;
+    }
 }
 .footer__bottom_left{
     width: 80%;

@@ -7,51 +7,73 @@
     border-radius: 6px;
 
     margin-right: 2rem;
-}
-.reviews__item_header{
-    margin-bottom: 1rem;
-}
-.reviews__item_type{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 100%;
 
-    opacity: 0.6;
+    @media @mwmobile{
+        margin-right: 0 !important;
+        padding: 20px 20px 30px 20px;
+    }
 
-    display: block;
-    margin-bottom: 4px;
-}
-.reviews__item_title{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 140%;
-}
-.reviews__item_description{
-    margin-bottom: 1.33rem;
-}
-.reviews__item_text{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
+    &_header{
+        margin-bottom: 1rem;
+    }
 
-    display: block;
-    padding-left: 60px;
+    &_type{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 100%;
 
-    &:before{
-        content: '';
+        opacity: 0.6;
+
         display: block;
-        width: 40px;
-        height: 29px;
+        margin-bottom: 4px;
+    }
 
-        background: url(../images/icons.png) no-repeat;
-        background-position: -137px -10px;
+    &_title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
 
-        z-index: 0;
-        position: absolute;
-        left: 40px;
+        @media @mwmobile{
+            font-size: 18px;
+        }
+    }
+
+    &_description{
+        margin-bottom: 1.33rem;
+    }
+
+    &_text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+    
+        display: block;
+        padding-left: 60px;
+
+        @media @mwmobile{
+            font-size: 14px;
+        }
+    
+        &:before{
+            content: '';
+            display: block;
+            width: 40px;
+            height: 29px;
+    
+            background: url(../images/icons.png) no-repeat;
+            background-position: -137px -10px;
+    
+            z-index: 0;
+            position: absolute;
+            left: 40px;
+
+            @media @mwmobile{
+                left: 25px;
+            }
+        }
     }
 }
 .reviews__text_more{
@@ -62,5 +84,9 @@
     width: 112px !important;
     margin-right: 10px;
 
+    @media @mwmobile{
+        max-width: 95px;
+        margin-right: 5px;
+    }
 }
 

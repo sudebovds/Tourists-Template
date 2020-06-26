@@ -3,6 +3,10 @@
 .gallery{
     margin-bottom: 6.67rem;
 
+    @media @mwmobile{
+        margin-bottom: 3rem;
+    }
+
     &__wrapper{
 
         @media @mwtablet{
@@ -12,18 +16,33 @@
 
     &__header{
         margin-bottom: 2.67rem;
+        display: flex;
+        justify-content: space-between;
+
+        @media @mwmobile{
+            flex-direction: column;
+        }
 
         &_title{
+            font-family: @f-med;
             font-style: normal;
             font-weight: 600;
             font-size: 32px;
             line-height: 140%;
         
             color: @main-text-color;
+
+            @media @mwmobile{
+                margin-bottom: 25px;
+                font-size: 21px;
+            }
         }
     }
 
     &__item{
+        @media @mwmobile{
+            max-width: 47%;
+        }
         @media @mwtablet{
             width: 48%;
         }

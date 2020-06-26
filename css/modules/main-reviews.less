@@ -4,6 +4,10 @@
     margin-bottom: 6.67rem;
     position: relative;
 
+    @media @mwmobile{
+        margin-bottom: 3rem;
+    }
+
     &__header{
         margin-bottom: 2.67rem;
 
@@ -20,9 +24,12 @@
             line-height: 140%;
         
             color: @main-text-color;
+
+            @media @mwmobile{
+                font-size: 24px;
+            }
         }
     }
-
     .owl-nav{
 
         button{
